@@ -6,7 +6,7 @@ from qtpy.QtWidgets import QGraphicsItem, QWidget, QGraphicsSceneHoverEvent, QGr
 from qtpy.QtCore import Qt, QRect, QRectF, QPointF, Signal, QSizeF
 from qtpy.QtGui import QFont, QTextCursor, QPixmap, QPainterPath, QTextDocument, QFocusEvent, QPainter, QPen, QColor, QTextCursor, QTextCharFormat, QTextDocument
 
-from dl.textdetector.textblock import TextBlock
+from modules.textdetector.textblock import TextBlock
 from utils.imgproc_utils import xywh2xyxypoly, rotate_polygons
 from .misc import FontFormat, px2pt, pt2px, td_pattern, table_pattern
 from .textlayout import VerticalTextDocumentLayout, HorizontalTextDocumentLayout

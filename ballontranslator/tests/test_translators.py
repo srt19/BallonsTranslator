@@ -1,7 +1,7 @@
 import sys, os
 import os.path as osp
 sys.path.append(osp.dirname(osp.dirname(__file__)))
-from dl.translators import TranslatorBase, GoogleTranslator, PapagoTranslator, TRANSLATORS, CaiyunTranslator, DeeplTranslator
+from modules.translators import TranslatorBase, GoogleTranslator, PapagoTranslator, TRANSLATORS, CaiyunTranslator, DeeplTranslator
 
 def test_translator(translator: TranslatorBase, test_list):
     for test_dict in test_list:

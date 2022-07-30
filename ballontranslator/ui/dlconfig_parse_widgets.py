@@ -1,6 +1,6 @@
 from typing import List
 
-from dl import VALID_INPAINTERS, VALID_TEXTDETECTORS, VALID_TRANSLATORS, VALID_OCR, \
+from modules import VALID_INPAINTERS, VALID_TEXTDETECTORS, VALID_TRANSLATORS, VALID_OCR, \
     TranslatorBase, DEFAULT_DEVICE
 from utils.logger import logger as LOGGER
 from .stylewidgets import ConfigComboBox

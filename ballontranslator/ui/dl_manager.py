@@ -8,17 +8,17 @@ from qtpy.QtWidgets import QMessageBox
 
 from utils.logger import logger as LOGGER
 from utils.registry import Registry
-from dl.translators import MissingTranslatorParams, InvalidSourceOrTargetLanguage
-from dl import INPAINTERS, TRANSLATORS, TEXTDETECTORS, OCR, \
+from modules.translators import MissingTranslatorParams, InvalidSourceOrTargetLanguage
+from modules import INPAINTERS, TRANSLATORS, TEXTDETECTORS, OCR, \
     VALID_TRANSLATORS, VALID_TEXTDETECTORS, VALID_INPAINTERS, VALID_OCR, \
     TranslatorBase, InpainterBase, TextDetectorBase, OCRBase
-import dl
-dl.translators.SYSTEM_LANG = QLocale.system().name()
+from modules.pagesources import SourceBase, nhentai
+import modules
+modules.translators.SYSTEM_LANG = QLocale.system().name()
 
 from .stylewidgets import ProgressMessageBox
 from .configpanel import ConfigPanel
 from .misc import ProjImgTrans, DLModuleConfig
-from .pagesources import SourceBase, nhentai
 from .constants import PROGRAM_PATH
 
 class ModuleThread(QThread):

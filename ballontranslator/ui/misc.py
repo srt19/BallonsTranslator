@@ -12,7 +12,7 @@ from . import constants
 from .constants import DEFAULT_FONT_FAMILY
 from utils.logger import logger as LOGGER
 from utils.io_utils import find_all_imgs, NumpyEncoder, imread, imwrite
-from dl.textdetector.textblock import TextBlock
+from modules.textdetector.textblock import TextBlock
 
 
 # return bgr tuple
@@ -460,7 +460,7 @@ class ProgramConfig:
 
     def load_from_dict(self, config_dict):
         try:
-            # self.dl.load_from_dict(config_dict['dl'])
+            # self.modules.load_from_dict(config_dict['dl'])
             self.dl.load_from_dict(config_dict['dl'])
             self.recent_proj_list = config_dict['recent_proj_list']
             self.imgtrans_paintmode = config_dict['imgtrans_paintmode']
